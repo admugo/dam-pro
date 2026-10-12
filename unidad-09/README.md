@@ -34,3 +34,6 @@ https://codelearnacademy.github.io/java/
 
 ## Revisión desde GitHub
 Un proyecto completo requiere análisis, implementación y verificación.
+
+## Ronda de sincronización 6
+Frase de prueba de la sexta ronda.
