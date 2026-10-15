@@ -41,5 +41,5 @@ Revisión realizada desde la primera copia local.
 ## Índice de tareas
 | Tarea | Descripción | Estado |
 |---|---|---|
-| [Tarea 1](tarea1/) | Generador de tickets de compra | Completada |
-| [Tarea 2](tarea2/) | Conversor de medidas interactivo | En desarrollo |
+| [Tarea 1](tarea-1/) | Generador de tickets de compra | Completada |
+| [Tarea 2](tarea-2/) | Conversor de medidas interactivo | En desarrollo |
