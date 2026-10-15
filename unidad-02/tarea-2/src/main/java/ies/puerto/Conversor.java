@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @version 1.0.0
  */
 public class Conversor {
-    static void main() {
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int opcion = 0;
         boolean salir = false;
@@ -26,25 +26,52 @@ public class Conversor {
         System.out.println(" ");
 
         while (!salir) {
-            float resultado = 0;
 
             System.out.println("1. Kilómetros a metros");
             System.out.println("2. Metros a centímetros");
             System.out.println("3. Kilómetros a millas");
             System.out.println("4. Salir");
+            System.out.println(" ");
 
             System.out.print("Selecciona una opción: ");
             opcion = teclado.nextInt();
 
+            float distancia = 0;
+            float resultado = 0;
+
             switch (opcion) {
                 case 1:
-                    //km a m
+                    System.out.print("Introduce los kilómetros: ");
+                    distancia = teclado.nextFloat();
+                    while (distancia < 0) {
+                        System.out.println("Error: La distancia no puede ser negativa.");
+                        System.out.print("Introduce un valor igual o mayor a cero: ");
+                        distancia = teclado.nextFloat();
+                    }
+                    resultado = distancia * 1000;
+                    System.out.println("Resultado: " + resultado + " metros");
                     break;
                 case 2:
-                    // m a cm
+                    System.out.print("Introduce los metros: ");
+                    distancia = teclado.nextFloat();
+                    while (distancia < 0) {
+                        System.out.println("Error: La distancia no puede ser negativa.");
+                        System.out.print("Introduce un valor igual o mayor a cero: ");
+                        distancia = teclado.nextFloat();
+                    }
+                    resultado = distancia * 100;
+                    System.out.println("Resultado: " + resultado + " centímetros");
                     break;
                 case 3:
-                    // km a millas
+                    System.out.print("Introduce los kilómetros: ");
+                    distancia = teclado.nextFloat();
+                    while (distancia < 0) {
+                        System.out.println("Error: La distancia no puede ser negativa.");
+                        System.out.print("Introduce un valor igual o mayor a cero: ");
+                        distancia = teclado.nextFloat();
+                    }
+                    resultado = distancia * 0.621371f;
+                    System.out.println("Resultado: " + resultado + " millas");
                     break;
                 case 4:
                     salir = true;
@@ -53,10 +80,12 @@ public class Conversor {
                     System.out.println("Opción no valida.");
                     break;
             }
-            System.out.println("Conversión realizada correctamente.");
-            System.out.println(" ");
 
-            contador++;
+            if (opcion >= 1 && opcion <= 3) {
+                contador++;
+                System.out.println("Conversión realizada correctamente.");
+            }
+            System.out.println(" ");
         }
 
         System.out.println("====================================");
