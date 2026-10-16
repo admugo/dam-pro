@@ -43,3 +43,4 @@ Revisión realizada desde la primera copia local.
 |---|---|---|
 | [Tarea 1](tarea-1/) | Generador de tickets de compra | Completada |
 | [Tarea 2](tarea-2/) | Conversor de medidas interactivo | Completada |
+| [Tarea 3](tarea-3/) | Simulador de ahorro personal | En desarrollo |
