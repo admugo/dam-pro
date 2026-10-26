@@ -115,9 +115,9 @@ public class GestorCalificaciones {
     }
 
     /**
-     * Funcion maximo
-     * @param lNotas
-     * @return
+     * Funcion que calcula el valor maximo de una lista
+     * @param lNotas List<Double> lista con los valores
+     * @return double valor maximo
      */
     static double obtenerMaxima(List<Double> lNotas){
         double maximo = lNotas.get(0);
@@ -133,9 +133,9 @@ public class GestorCalificaciones {
     }
 
     /**
-     * Funcion minimo
-     * @param lNotas
-     * @return
+     * Funcion que calcula el valor minimo de una lista
+     * @param lNotas List<Double> lista con los valores
+     * @return double valor minimo
      */
     static double obtenerMinima(List<Double> lNotas){
         double minimo = lNotas.get(0);
