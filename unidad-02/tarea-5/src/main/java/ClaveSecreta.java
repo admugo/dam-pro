@@ -27,11 +27,11 @@ public class ClaveSecreta {
         }
         String sClave = "";
 
-        sPalabra.replace("a|A", "?");
-        sPalabra.replace("e|E", "=");
-        sPalabra.replace("i|I", ")");
-        sPalabra.replace("o|O", "(");
-        sPalabra.replace("u|U", "/");
+        sPalabra = sPalabra.replace("a", "?");
+        sPalabra = sPalabra.replace("e", "=");
+        sPalabra = sPalabra.replace("i", ")");
+        sPalabra = sPalabra.replace("o", "(");
+        sPalabra = sPalabra.replace("u", "/");
 
         sClave = sPalabra;
 
