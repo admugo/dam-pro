@@ -1,7 +1,10 @@
 package es.dampro.unidad2.tarea6;
 
 /**
- * TODO: documenta el propósito y la responsabilidad de la clase Palindromo.
+ * Clase que comprueba si se lee igual de ambos lados; ignora espacios y mayusculas, no signos ni tildes; texto vacio no es palindromo.
+ *
+ * @author admugo
+ * @version 1.0.0
  */
 public final class Palindromo {
 
@@ -10,12 +13,26 @@ public final class Palindromo {
     }
 
     /**
-     * TODO: explica el algoritmo y su comportamiento con datos límite.
+     * Funcion que comprueba si se lee igual de ambos lados; ignora espacios y mayusculas, no signos ni tildes; texto vacio no es palindromo.
      * @param texto Dato de entrada que debe cumplir el contrato del enunciado.
      * @return Resultado de la comprobación sin distinguir mayúsculas ni espacios.
      */
     public static boolean esPalindromo(String texto) {
-        // TODO: implementa el algoritmo sin sustituirlo por una función que lo resuelva directamente.
-        throw new UnsupportedOperationException("Método pendiente de implementar: esPalindromo");
+        if (texto == null || texto.isEmpty()){
+            throw new IllegalArgumentException("La cadena de texto no puede ser nula");
+        }
+
+        texto = texto.toLowerCase();
+        texto = texto.replace(" ", "");
+
+        for (int i = 0; i < texto.length(); i++) {
+            char letraIzq = texto.charAt(i);
+            char letraDer = texto.charAt(texto.length() - 1 - i);
+            if (letraIzq != letraDer){
+                return false;
+            }
+        }
+
+        return true;
     }
 }
