@@ -5,22 +5,26 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * TODO: Describe la finalidad de AnalizadorFecha.
+ * Clase de utilidad para analizar propiedades temporales de una fecha.
  *
- * @author
- * @version
+ * @author admugo
+ * @version 1.0.0
  */
 public final class AnalizadorFecha {
     private AnalizadorFecha() { }
 
     /**
-     * TODO: Describe lo que hace el método.
+     * Analiza una fecha indicando su formato ISO, dia de la semana,
+     * posicion en el ano, si es bisiesto y la longitud del mes.
      *
-     * @param fecha
-     * @return
+     * @param fecha LocalDate la fecha local que se desea analizar
+     * @return String una cadena con el formato AAAA-MM-DD|DAY_OF_WEEK|DIA_DEL_ANIO|true/false|DIAS_MES
      */
     public static String analizarFecha(LocalDate fecha) {
-        // TODO: Implementa el algoritmo según el enunciado.
-        return "";
+        return fecha.toString() + "|" +
+                fecha.getDayOfWeek().name() + "|" +
+                fecha.getDayOfYear() + "|" +
+                fecha.isLeapYear() + "|" +
+                fecha.lengthOfMonth();
     }
 }
