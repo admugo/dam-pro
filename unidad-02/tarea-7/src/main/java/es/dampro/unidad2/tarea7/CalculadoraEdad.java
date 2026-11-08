@@ -5,23 +5,26 @@ import java.time.format.*;
 import java.time.temporal.ChronoUnit;
 
 /**
- * TODO: Describe la finalidad de CalculadoraEdad.
+ * Clase para calcular la edad exacta entre dos fechas.
  *
- * @author
- * @version
+ * @author admugo
+ * @version 1.0.0
  */
 public final class CalculadoraEdad {
     private CalculadoraEdad() { }
 
     /**
-     * TODO: Describe lo que hace el método.
+     * Calcula la edad exacta en anos, meses y dias mediante Period para una fecha de referencia.
+     * Si el nacimiento es posterior a dicha fecha, lanza IllegalArgumentException.
      *
-     * @param nacimiento
-     * @param fechaActual
-     * @return
+     * @param nacimiento LocalDate la fecha de nacimiento
+     * @param fechaActual LocalDate la fecha de referencia actual
+     * @return Period el periodo de tiempo exacto que representa la edad
      */
     public static Period calcularEdad(LocalDate nacimiento, LocalDate fechaActual) {
-        // TODO: Implementa el algoritmo según el enunciado.
-        return Period.ZERO;
+        if (nacimiento.isAfter(fechaActual)) {
+            throw new IllegalArgumentException("La fecha de nacimiento no puede ser posterior a la fecha actual.");
+        }
+        return Period.between(nacimiento, fechaActual);
     }
 }
