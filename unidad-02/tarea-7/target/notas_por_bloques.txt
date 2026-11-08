@@ -1,0 +1,16 @@
+TAREA 7 · CORRECCIÓN AUTOMÁTICA
+Funcionalidad: 8 puntos · JavaDoc: 2 puntos
+
+AnalizadorFecha: 12/12 tests (0.800/0.800) · JavaDoc 5/5 (0.200/0.200) · subtotal 1.000/1.000
+CalculadoraEdad: 12/12 tests (0.800/0.800) · JavaDoc 6/6 (0.200/0.200) · subtotal 1.000/1.000
+CalculadoraVencimientos: 12/12 tests (0.800/0.800) · JavaDoc 8/8 (0.200/0.200) · subtotal 1.000/1.000
+ValidadorFechas: 12/12 tests (0.800/0.800) · JavaDoc 5/5 (0.200/0.200) · subtotal 1.000/1.000
+CuentaAtrasEvento: 12/12 tests (0.800/0.800) · JavaDoc 6/6 (0.200/0.200) · subtotal 1.000/1.000
+CalculadoraJornada: 12/12 tests (0.800/0.800) · JavaDoc 7/7 (0.200/0.200) · subtotal 1.000/1.000
+CalculadoraViaje: 12/12 tests (0.800/0.800) · JavaDoc 7/7 (0.200/0.200) · subtotal 1.000/1.000
+ComprobadorReservas: 12/12 tests (0.800/0.800) · JavaDoc 8/8 (0.200/0.200) · subtotal 1.000/1.000
+ProximoCumpleanios: 12/12 tests (0.800/0.800) · JavaDoc 6/6 (0.200/0.200) · subtotal 1.000/1.000
+ConversorZonasHorarias: 12/12 tests (0.800/0.800) · JavaDoc 6/6 (0.200/0.200) · subtotal 1.000/1.000
+
+NOTA AUTOMÁTICA: 10.00/10.00
+Revisión docente: contenido de Javadoc, legibilidad, restricciones y Main.
