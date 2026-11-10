@@ -1,13 +1,40 @@
 package es.educacion.arrays;
 
-// Devuelve el mayor valor. Vacío o null: IllegalArgumentException.
-// 
-// TODO: implementar el método y documentar la clase y el método mediante Javadoc.
+/**
+ * Clase para encontrar el valor maximo de un array.
+ *
+ * @author admugo
+ * @version 1.0.0
+ */
 public final class Ejercicio03Maximo {
     private Ejercicio03Maximo() { }
 
-    // Devuelve el mayor valor. Vacío o null: IllegalArgumentException.
+    public static void main(String[] args) {
+        int[] numeros = {8, 7, 13, 2, 10};
+        int resultado = maximo(numeros);
+
+        System.out.println("Resultado = " + resultado);
+    }
+
+    /**
+     * Funcion que obtiene el mayor valor de un array.
+     *
+     * @param numeros int[] que contiene los numeros
+     * @return int el valor maximo del array
+     * @exception IllegalArgumentException si el array es nulo o vacio
+     */
     public static int maximo(int[] numeros) {
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        if (numeros == null || numeros.length == 0) {
+            throw new IllegalArgumentException("El array es nulo o vacio");
+        }
+
+        int mayor = numeros[0];
+        for (int numero : numeros) {
+            if (numero > mayor) {
+                mayor = numero;
+            }
+        }
+
+        return mayor;
     }
 }
